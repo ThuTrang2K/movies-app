@@ -1,34 +1,23 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Header from "./components/header/Header";
-import HomePages from "./home/HomePages";
-
+import "./App.css"
+import HomePage from "./home/HomePage"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import SinglePage from "./components/watch/SinglePage"
+import Header from "./components/header/Header"
+import Footer from "./components/footer/Footer"
 
 function App() {
-    return (
-        <>
-            <Router>
-                <Header></Header>
-                <Routes>
-                    <Route exact path="/" component={HomePages} />
-                    {/* <Route
-                        path="/singlepage/:id"
-                        component={SinglePage}
-                        exact
-                    /> */}
-                    {/* <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route> */}
-                </Routes>
-            </Router>
-        </>
-    );
+  return (
+    <>
+      <Router>
+        <Header />
+        
+        <Routes>
+          <Route path='/' element={<HomePage/>} />
+        </Routes>
+        <Footer />
+      </Router>
+    </>
+  )
 }
 
-export default App;
+export default App

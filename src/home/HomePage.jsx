@@ -4,12 +4,13 @@ import Trending from "../components/trending/Trending"
 import Upcomming from "../components/upcoming/Upcomming"
 import { latest, recommended, upcome } from "../dummyData"
 
-const HomePages = () => {
+const HomePage = () => {
   const [items, setItems] = useState(upcome)
   const [item, setItem] = useState(latest)
   const [rec, setRec] = useState(recommended)
   return (
     <>
+    <h1>Hello</h1>
       <Homes />
       <Upcomming items={items} title='Upcomming Movies' />
       <Upcomming items={item} title='Latest Movies' />
@@ -19,4 +20,4 @@ const HomePages = () => {
   )
 }
 
-export default HomePages
+export default HomePage

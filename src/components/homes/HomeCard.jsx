@@ -47,7 +47,7 @@ const HomeCard = ({ item: { id, cover, name, rating, time, desc, starring, genre
               <button>
                 <div className='img'>
                   <img src='./images/play-button.png' alt='' />
-                  <img src='./images/play.png' className='change' alt=''/>
+                  <img src='./images/play.png' className='change' />
                 </div>
                 WATCH TRAILER
               </button>
